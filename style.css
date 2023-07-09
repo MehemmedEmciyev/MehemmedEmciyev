@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(lllsasa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: white;
+    cursor: pointer;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transition: all 0.5s;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #007D80;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.6s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.section h1{
+    text-transform: uppercase;
+    font-size: 75px;
+}
+.section p{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 100;
+    line-height: 25px;
+}
+.section .b1{
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 52px;
+    background-color:transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #007D80;
+    position: relative;
+    
+    
+}
+.section .btn .b1::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #007D80;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.6s;
+    z-index: -1;
+}
+.section .btn .b1:hover::before{
+    border: none;
+    width: 100%;
+}
+.section .b1:hover{
+    border: none;
+}
